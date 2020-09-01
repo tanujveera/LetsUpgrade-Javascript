@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>LetsUpgrade</title>
+  <style>
+    h1{
+      text-align:center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Question.5</h1>
+  <h2>Print an array in reverse order</h2>
+</body>
+
+<script>
+    let arr=["apple","car","marvel","iron man"]
+    document.write("Given array: "+arr+"<br>");
+    let rev_arr=[];
+    let len=arr.length-1;
+    for(let i=len;i>=0;i--){
+        rev_arr.push(arr[i])
+    }
+    console.log(rev_arr);
+    document.write("Reverse of that array: "+rev_arr);
+</script>
+
+</html>

@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>LetsUpgrade</title>
+  <style>
+    h1{
+      text-align:center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Question.4</h1>
+  <h2>Program to display only elements containing 'a' in them from a array</h2>
+  <p id="result"></p>
+</body>
+
+<script>
+  let arr=["apple","crew","tank","stool","marvel"]
+  document.write("Array: "+arr)
+  document.write("<br>Elements containing 'a':<br>")
+  for(let i=0;i<arr.length;i++){
+    if(arr[i].includes("a")==true){
+      console.log(arr[i]);
+      document.write(arr[i]+"<br>");
+    }
+  }
+</script>
+
+</html>
