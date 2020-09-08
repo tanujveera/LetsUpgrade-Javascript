@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>LetsUpgrade JavaScript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    <body>
+    <div class="container">
+    <p>Question 3</p>
+    <p>Create an array of objects with objects having the following properties.
+        <ol>
+            <li>{name(string), age(number), country(string), hobbies array (string[])}.</li>
+            <li>Write a function to display all the objects on the console.</li>
+        </ol>
+    </p>
+    <pre id="result"></pre>
+    </div>
+
+</body>
+
+<script>
+
+    let family={
+        names :
+        {
+            name : "Tanuj",
+            namev : "Vijay",
+            namep : "Pavan",
+            namek : "krishna",
+        },
+        ages :
+        {
+            age1 : 20,
+            age2 : 17,
+            age3 : 18,
+            age4 : 45,
+        },
+        countries :
+        {
+            country : "India",
+            countryp : "Pochinki",
+            countrys : "Ship yard",
+            countrye : "East Godavari",
+        },
+
+        hobbies : ["Reading Books", "Exploring New Things", "Music"],
+
+        printResult: function()
+        {
+            console.log(family.names);
+            console.log(family.ages);
+            console.log(this.countries);
+            console.log(family.hobbies);
+            let res=`
+            My name is ${family.names.name}.
+            I am ${family.ages.age}.
+            I am from ${family.countries.country}
+            My hobbies are ${family.hobbies}`;
+            document.getElementById('result').innerHTML = res;
+        }
+
+    };
+
+    family.printResult();
+
+</script>
+
+</html>

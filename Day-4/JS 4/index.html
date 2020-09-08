@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>LetsUpgrade JavaScript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+        <p>Question 4</p>
+        <p>Following the 3rd question.
+            <ol>
+                <li>Write a function to display all the objects having age less than 30.</li>
+                <li>Write a function to display all the objects having country India.</li>
+            </ol>
+        </p>
+        <pre id="result"></pre>
+   </body>
+
+   <script>
+
+    let family={
+        names :
+        {
+            name : "Tanuj",
+            namev : "Vijay",
+            namep : "Pavan",
+            namek : "krishna",
+        },
+        ages :
+        {
+            age1 : 20,
+            age2 : 17,
+            age3 : 18,
+            age4 : 45,
+        },
+        countries :
+        {
+            country : "India",
+            countryp : "Pochinki",
+            countrys : "Ship yard",
+            countrye : "East Godavari",
+        },
+
+        hobbies : ["Reading Books", "Exploring New Things", "Music"],
+
+        printResult: function()
+        {
+            let res=`
+            My name is ${family.names.name}.
+            I am ${family.ages.age1}.
+            I am from ${family.countries.country}
+            My hobbies are ${family.hobbies}`;
+            document.getElementById('result').innerHTML = res;
+        },
+
+        result: function(){
+            console.log(family.ages);
+            Object.values(family.ages).forEach(value=>{
+                if(value<30){
+                    console.log(value);
+                }
+            });
+        },
+    };
+    family.printResult();
+    family.result();
+
+</script>
+
+   </html>

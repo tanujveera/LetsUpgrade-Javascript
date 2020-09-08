@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LetsUpgrade JavaScript</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        #page{
+            padding:40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <p>Question 1</p>
+    <p>Create a webpage containing an image and three buttons.
+        <ol>
+            <li>On click of second button a change the existing image to a new image.</li>
+            <li>On click of the third button change it once again.</li>
+            <li>On click of first, the first image should come back.</li>
+        </ol>
+    </p>
+    <div id="page">
+    <img id="image" src="https://www.thehindu.com/sport/other-sports/ygwppn/article30663162.ece/ALTERNATES/LANDSCAPE_1200/THNAKPEOPLE-KOBEBRYANT" alt="" height="50%"width="50%">
+    <br>
+    <p id="name"></p>
+    <button class="btn btn-primary btn-sm" onclick="changeImage()">First</button>
+    <button class="btn btn-primary btn-sm" onclick="changeSec()">Second</button>
+    <button class="btn btn-primary btn-sm" onclick="changeThird()">Third</button> 
+</div>
+</div>
+</body>
+
+<script>
+    function changeSec(){
+    const element = document.getElementById('image');
+    element.src = "https://m.economictimes.com/thumb/msid-68296368,width-1200,height-900,resizemode-4,imgsize-551536/robinsharma.jpg";
+    const ele=document.getElementById('name');
+    ele.innerHTML="Robin Sharma"
+ }
+
+ function changeThird(){
+    const element = document.getElementById('image');
+    element.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTLULkukE70DdD2ufU12sKeiXR9s_iTs8D0uw&usqp=CAU"
+    const ele=document.getElementById('name');
+    ele.innerHTML="David Goggins"
+}
+
+ function changeImage(){
+    const element = document.getElementById('image');
+    element.src = "https://www.thehindu.com/sport/other-sports/ygwppn/article30663162.ece/ALTERNATES/LANDSCAPE_1200/THNAKPEOPLE-KOBEBRYANT"
+    const ele=document.getElementById('name');
+    ele.innerHTML="Kobe Bryant"
+ }
+
+</script>
+
+</html>
